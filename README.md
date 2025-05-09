@@ -14,7 +14,7 @@ Representar entidades do mundo real (animais) com propriedades e comportamentos,
 ---
 
 
-## Estrutura do Código
+## Estrutura do Código Antigo
 
 ```java
 
@@ -76,7 +76,7 @@ public class Main {
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
 | **Abstração**      | Criação das classes `Pato` e `Pinguim`, representando entidades reais com atributos e comportamentos.                              |
 | **Encapsulamento** | Atributos são representados dentro das classes, manipulados por meio de métodos como `bicar()`.                                    |
-| **Herança**        | Embora não esteja ainda implementada, a estrutura sugere que as classes podem herdar de uma classe comum como `Ave`.               |
+| **Herança**        | A estrutura herdam de uma classe comum chamada `Ave`.   								                  |
 | **Polimorfismo**   | O método `bicar()` pode se comportar de maneira diferente dependendo do valor de `bico`, evidenciando polimorfismo comportamental. |
 
 ---
@@ -87,3 +87,27 @@ Durante o desenvolvimento do projeto:
 
 * Foram seguidos sprints curtos para análise, implementação e testes.
 * Pair programming e revisões foram utilizados para consolidar o aprendizado.
+
+---
+
+## Product Backlog (Requisitos/Histórias de Usuário) ##
+
+| ID   | História de Usuário                                                                            | Prioridade |
+|------|------------------------------------------------------------------------------------------------|------------|
+| US01 | Como usuário, queremos visualizar os comportamentos dos animais, para entendê-los melhor.      | Alta       |
+| US02 | Como desenvolvedor, queremos adicionar novos atributos específicos especificos de cada Classe. | Média      |
+| US03 | Como desenvolvedor, queremos organizar o código com boas práticas de encapsulamento.           | Alta       |
+| US04 | Como desenvolvedor, queremos aplicar herança e polimorfismo para reutilizar código.            | Alta       |
+
+---
+
+## Sprint Backlog (dividido em tarefas) ##
+
+| Tarefa                                   | Relacionada à | Estimativa |
+|------------------------------------------|---------------|------------|
+| Implementar classe AVE base              | US01, US04    | 2h         |
+| Implementar classes Pato e Pinguim       | US01, US04    | 2h         |
+| Aplicar encapsulamento em atributos      | US03          | 1h         |
+| Criar testes unitários com JUnit         | US03          | 2h         |
+| Documentar métodos com Javadoc           | US03          | 1h         |
+| Refatorar método `bicar()` e `nadar()`   | US04          | 1h         |
